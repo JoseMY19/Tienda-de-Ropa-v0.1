@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UrbanStyle - Tienda de Ropa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.svg" alt="UrbanStyle Logo" />
+      <h1>UrbanStyle</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><button id="carrito-btn">🛒 Carrito (<span id="contador">0</span>)</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-text">
+      <h2>Moda Urbana, Estilo Único</h2>
+      <p>Descubre la mejor ropa para tu día a día. Con UrbanStyle siempre estarás a la moda.</p>
+      <a href="#productos" class="btn">Ver Productos</a>
+    </div>
+  </section>
+
+  <section id="productos" class="productos">
+    <h2>Nuestros Productos</h2>
+    <div id="lista-productos" class="grid"></div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form id="form-contacto">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <div id="carrito-modal" class="modal">
+    <div class="modal-content">
+      <span id="cerrar-carrito">&times;</span>
+      <h2>Tu Carrito</h2>
+      <ul id="carrito-lista"></ul>
+      <p>Total: <span id="carrito-total">S/ 0.00</span></p>
+      <button id="finalizar-compra">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 UrbanStyle - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
